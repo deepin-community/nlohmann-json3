@@ -1,5 +1,176 @@
-template-repository (1.0-1) unstable; urgency=medium
+nlohmann-json3 (3.11.2-2) unstable; urgency=medium
 
-  * Initial release
+  * Tweak one install path due to upstream name change
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 15 Aug 2022 17:20:13 +0200
+
+nlohmann-json3 (3.11.2-1) unstable; urgency=medium
+
+  * Team upload (salsa.d.o namespace)
+  * New upstream version 3.11.2
+  * Update copyright file
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 15 Aug 2022 15:32:44 +0200
+
+nlohmann-json3 (3.10.5-2) unstable; urgency=medium
+
+  * Team upload (salsa.d.o namespace)
+  * Stop installing html files, remove upstream
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 17 Jan 2022 13:43:55 +0100
+
+nlohmann-json3 (3.10.5-1) unstable; urgency=medium
+
+  * Team upload (salsa.d.o namespace)
+  * Update watch file to v4
+  * New upstream version 3.10.5
+  * Update copyright years
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 17 Jan 2022 11:33:34 +0100
+
+nlohmann-json3 (3.10.4-1) unstable; urgency=medium
+
+  * New upstream version 3.10.4
+  * Bump std-version to 4.6.0
+  * Allow-stderror for new doctest deprecation warning (Closes: #994864)
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Wed, 20 Oct 2021 16:38:01 +0200
+
+nlohmann-json3 (3.10.2-1) unstable; urgency=medium
+
+  * Team upload (salsa.d.o namespace)
+  * New upstream version 3.10.2
+  * update copyright years
+  * Update copyright file
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 07 Sep 2021 09:11:10 +0200
+
+nlohmann-json3 (3.9.1-1) unstable; urgency=medium
+
+  * Team upload (salsa.d.o namespace)
+  * New upstream version 3.9.1
+  * Install pkgconfig file in a non-multiarch location too
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 28 Sep 2020 18:26:42 +0200
+
+nlohmann-json3 (3.9.0-1) unstable; urgency=medium
+
+  * Team upload (salsa.d.o namespace)
+    - not committing the new tarball on git
+  * Drop cmake_archindep patch: upstream
+  * New upstream version 3.9.0
+  * Add testsuite, now to have a lighter download tarball,
+    tests are downloading stuff from internet. Convert this into an
+    autopkgtest testsuite
+  * Update copyright file, remove tests
+  * Add R^3: no
+  * Bump compat level to 13
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 27 Jul 2020 18:41:58 +0200
+
+nlohmann-json3 (3.7.3-1) unstable; urgency=medium
+
+  * Team upload (salsa.d.o namespace)
+    - not committing the new tarball on git
+  * New upstream version 3.7.3
+  * Bump std-version to 4.5.0, no changes required
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Wed, 05 Feb 2020 22:38:47 +0100
+
+nlohmann-json3 (3.7.0-2) unstable; urgency=medium
+
+  * Mark as multi-arch: Foreign (thanks to Helmut Grohne) (Closes: #933593)
+  * debian/patches/cmake_archindep: make cmake version config file arch-indep
+
+ -- Hubert Chathi <uhoreg@debian.org>  Thu, 01 Aug 2019 15:03:56 -0400
+
+nlohmann-json3 (3.7.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control, debian/rules: use cmake, so that it can be found by cmake
+
+ -- Hubert Chathi <uhoreg@debian.org>  Tue, 30 Jul 2019 19:39:51 -0400
+
+nlohmann-json3 (3.6.1-1) unstable; urgency=medium
+
+  * Upload to unstable.
+  * debian/control: add VCS info
+
+ -- Hubert Chathi <uhoreg@debian.org>  Fri, 05 Jul 2019 12:15:55 -0400
+
+nlohmann-json3 (3.6.1-0.1~exp1) experimental; urgency=medium
+
+  * New upstream release
+    - Upload to experimental due to freeze
+  * Update copyright file and years
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 16 Apr 2019 19:11:27 +0200
+
+nlohmann-json3 (3.5.0-0.1) unstable; urgency=medium
+
+  [ Chris Lamb ]
+  * Make build reproducible (Closes: #900551)
+  * Do not ignore nocheck in testsuite (Closes: #900549)
+
+  [ Gianfranco Costamagna ]
+  * Non-maintainer upload
+  * Update to new release (Closes: #917581)
+  * Strip trailing spaces in changelog, control and rules files
+  * Set compat level to 12
+  * Honour no-check
+  * Bump std-version to 4.3.0, no changes required
+  * Fixup copyright file
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 08 Jan 2019 22:44:26 +0100
+
+nlohmann-json3 (3.1.2-2) unstable; urgency=medium
+
+  * Add missing copyright info (thanks to wookey).
+  * Ship the multi-file version instead of the single-file version.
+
+ -- Hubert Chathi <uhoreg@debian.org>  Wed, 02 May 2018 08:02:01 -0400
+
+nlohmann-json3 (3.1.2-1) unstable; urgency=medium
+
+  * New maintainer for 3.x branch.
+    * API is incompatible with 2.x branch, so new package name.
+  * New upstream version 3.1.2. (Closes: #886865)
+
+ -- Hubert Chathi <uhoreg@debian.org>  Sat, 17 Mar 2018 17:26:03 -0400
+
+nlohmann-json (2.0.6-1) unstable; urgency=medium
+
+  * New upstream version 2.0.5
+  * New upstream version 2.0.6
+
+ -- Muri Nicanor <muri@immerda.ch>  Sun, 23 Oct 2016 22:49:30 +0200
+
+nlohmann-json (2.0.4-1) unstable; urgency=medium
+
+  * New upstream version 2.0.4
+
+ -- Muri Nicanor <muri@immerda.ch>  Mon, 12 Sep 2016 18:28:54 +0200
+
+nlohmann-json (2.0.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Muri Nicanor <muri@immerda.ch>  Sun, 04 Sep 2016 19:29:34 +0200
+
+nlohmann-json (2.0.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Muri Nicanor <muri@immerda.ch>  Wed, 03 Aug 2016 14:43:22 +0200
+
+nlohmann-json (2.0.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Muri Nicanor <muri@immerda.ch>  Fri, 08 Jul 2016 21:27:37 +0200
+
+nlohmann-json (1.1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #825623)
+
+ -- Muri Nicanor <muri@immerda.ch>  Sat, 28 May 2016 16:44:47 +0200

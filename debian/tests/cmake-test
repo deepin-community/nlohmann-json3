@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+cp * "$AUTOPKGTEST_TMP" -Rv
+cd "$AUTOPKGTEST_TMP"
+
+mkdir build && cd build
+cmake ..
+make
+# some tests requires the test directory to be available locally, while some others download the hundred
+# megabyte stuff from Internet. We use the second approach, to avoid a huge tarball being ship with the source
+# code, just for testing. See https://github.com/nlohmann/json/issues/2189
+ctest -LE git_required
