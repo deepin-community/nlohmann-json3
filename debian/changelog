@@ -1,3 +1,9 @@
+nlohmann-json3 (3.11.2-2deepin1) unstable; urgency=medium
+
+  * import a patch from upstream to fix for gcc-13
+
+ -- Chang Yang <yangchang@deepin.org>  Mon, 16 Oct 2023 15:13:11 +0800
+
 nlohmann-json3 (3.11.2-2) unstable; urgency=medium
 
   * Tweak one install path due to upstream name change
