@@ -1,8 +1,13 @@
-nlohmann-json3 (3.11.2-2deepin1) unstable; urgency=medium
+nlohmann-json3 (3.11.3-1) unstable; urgency=medium
 
-  * import a patch from upstream to fix for gcc-13
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Repository, Repository-Browse, Security-Contact.
+  * Update standards version to 4.6.1, no changes needed.
 
- -- Chang Yang <yangchang@deepin.org>  Mon, 16 Oct 2023 15:13:11 +0800
+  [ Gianfranco Costamagna ]
+  * New upstream version 3.11.3 (Closes: #1042189)
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Sat, 16 Dec 2023 18:35:18 +0100
 
 nlohmann-json3 (3.11.2-2) unstable; urgency=medium
 
