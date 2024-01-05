@@ -17,7 +17,7 @@ License: Expat
 Files: debian/*
 Copyright: 2016 Muri Nicanor <muri@immerda.ch>
   2018 Hubert Chathi <uhoreg@debian.org>
-  2019-2022 Gianfranco Costamagna <locutusofborg@debian.org>
+  2019-2023 Gianfranco Costamagna <locutusofborg@debian.org>
 License: Expat
 
 Files: tests/thirdparty/Fuzzer/*
